@@ -16,8 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        Chartboost.startWithAppId("56476182a8b63c6e91d666aa", appSignature: "01958bbbb8c7d5e713d073535465016d2f6fcbae", delegate: nil)
+        Chartboost.cacheInterstitial(CBLocationDefault)
+        
+        
         return true
     }
+    
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

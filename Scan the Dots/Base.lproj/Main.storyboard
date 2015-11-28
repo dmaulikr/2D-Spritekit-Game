@@ -1,25 +1,229 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8118" systemVersion="15A172" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BV1-FR-VrT">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8098"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Scan_the_Dots" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8aa-yV-Osq"/>
                         <viewControllerLayoutGuide type="bottom" id="qHh-Mt-9TT"/>
                     </layoutGuides>
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hj3-bc-cUb">
+                                <rect key="frame" x="16" y="487" width="85" height="30"/>
+                                <state key="normal" title="Remove Ads">
+                                    <color key="titleColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="removeAds:" destination="BV1-FR-VrT" eventType="touchUpInside" id="mjc-ZT-Fsx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CzQ-l8-zWR">
+                                <rect key="frame" x="175" y="487" width="129" height="30"/>
+                                <state key="normal" title="Restore Purchases">
+                                    <color key="titleColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="restorePurchases:" destination="BV1-FR-VrT" eventType="touchUpInside" id="dWh-6G-hBM"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Djj-DA-7Ic" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aSt-jI-DYN"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfG-gI-hvs">
+                                <rect key="frame" x="274" y="38" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fa0-Vl-8s7"/>
+                                    <constraint firstAttribute="width" constant="40" id="pKj-UQ-xHU"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="GCbutton"/>
+                                <connections>
+                                    <action selector="showLeaderBoard:" destination="BV1-FR-VrT" eventType="touchUpInside" id="7zE-nS-jp8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6E-bb-Fyy">
+                                <rect key="frame" x="4" y="120" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="fe7-GQ-HgR"/>
+                                    <constraint firstAttribute="height" constant="30" id="yxR-hb-Sk6"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Button-info-icon"/>
+                                <connections>
+                                    <action selector="ShowInfo:" destination="BV1-FR-VrT" eventType="touchUpInside" id="8Sq-Sm-VN4"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Infobulle" translatesAutoresizingMaskIntoConstraints="NO" id="NQA-km-Shf">
+                                <rect key="frame" x="39" y="43" width="210" height="214"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="iJC-UR-MnX"/>
+                                    <constraint firstAttribute="width" constant="210" id="uO5-Z2-Yrx"/>
+                                </constraints>
+                            </imageView>
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VAn-D5-7sv">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ROY-tj-Jek"/>
+                                </constraints>
+                            </adBannerView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Djj-DA-7Ic" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-16" id="1QO-Ig-SPV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CzQ-l8-zWR" secondAttribute="trailing" id="8cQ-0n-XEh"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="VAn-D5-7sv" secondAttribute="bottom" id="DJN-Vk-PTO"/>
+                            <constraint firstItem="L6E-bb-Fyy" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="100" id="M2w-x9-cZg"/>
+                            <constraint firstItem="VAn-D5-7sv" firstAttribute="top" secondItem="CzQ-l8-zWR" secondAttribute="bottom" constant="1" id="Pv3-DK-kDz"/>
+                            <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="Djj-DA-7Ic" secondAttribute="bottom" id="Qgz-2T-y1W"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Hj3-bc-cUb" secondAttribute="leading" id="RqQ-x7-cht"/>
+                            <constraint firstItem="VAn-D5-7sv" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-16" id="SYX-Es-hDs"/>
+                            <constraint firstItem="dfG-gI-hvs" firstAttribute="trailing" secondItem="3se-qz-xqx" secondAttribute="trailingMargin" constant="10" id="Yrl-cq-nY8"/>
+                            <constraint firstItem="NQA-km-Shf" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="23" id="iDE-eU-Mqn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VAn-D5-7sv" secondAttribute="trailing" constant="-16" id="iNR-eJ-oWs"/>
+                            <constraint firstItem="VAn-D5-7sv" firstAttribute="top" secondItem="Hj3-bc-cUb" secondAttribute="bottom" constant="1" id="iUb-WY-E3i"/>
+                            <constraint firstItem="L6E-bb-Fyy" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-12" id="nVE-Ip-c9n"/>
+                            <constraint firstItem="NQA-km-Shf" firstAttribute="leading" secondItem="L6E-bb-Fyy" secondAttribute="trailing" constant="5" id="oSp-xL-eLG"/>
+                            <constraint firstItem="dfG-gI-hvs" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="18" id="q9D-5n-Pju"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Djj-DA-7Ic" secondAttribute="trailing" constant="-16" id="qnr-8n-Ugd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Infobulle" destination="NQA-km-Shf" id="Twh-Ox-YDq"/>
+                        <outlet property="banner" destination="VAn-D5-7sv" id="c89-Ua-VfR"/>
+                        <outlet property="bannerGoogle" destination="Djj-DA-7Ic" id="Xxd-eJ-dkL"/>
+                        <outlet property="outRemoveAds" destination="Hj3-bc-cUb" id="EzF-yw-pTZ"/>
+                        <outlet property="outRestorePurchases" destination="CzQ-l8-zWR" id="9SU-KG-GZb"/>
+                        <segue destination="BoV-Xh-Qjf" kind="modal" identifier="Context" id="K56-tT-8sI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-186" y="374"/>
+        </scene>
+        <!--MenuViewController-->
+        <scene sceneID="NL4-xX-Pti">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" title="MenuViewController" id="BoV-Xh-Qjf" customClass="MenuViewController" customModule="Scan_the_Dots" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yJN-7W-alY"/>
+                        <viewControllerLayoutGuide type="bottom" id="u7V-T4-uE6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gBK-Tb-aqa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAe-dJ-LOg">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="X00-Rv-SEw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="RESTART">
+                                    <color key="titleColor" red="1" green="0.043477887219999997" blue="0.081261402410000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restart:" destination="BoV-Xh-Qjf" eventType="touchUpInside" id="PbY-TA-QTa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hau-fX-uw2">
+                                <rect key="frame" x="-4" y="200" width="328" height="368"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="BUY &quot;KEEP ON&quot; ">
+                                    <color key="titleColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buy:" destination="BoV-Xh-Qjf" eventType="touchUpInside" id="gWx-oe-91A"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Increase your Current Score: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96Z-Rp-tlF">
+                                <rect key="frame" x="24" y="244" width="272" height="23.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzR-IK-hqU">
+                                <rect key="frame" x="4" y="496" width="68" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="4Lk-21-Ei8"/>
+                                    <constraint firstAttribute="height" constant="68" id="mfM-fB-wKg"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Fb"/>
+                                <connections>
+                                    <action selector="Fb:" destination="BoV-Xh-Qjf" eventType="touchUpInside" id="eV9-rE-aJT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rn9-8r-ETg">
+                                <rect key="frame" x="244" y="494" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="2mn-aU-KIZ"/>
+                                    <constraint firstAttribute="width" constant="75" id="FQg-0e-GTS"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Twitter"/>
+                                <connections>
+                                    <action selector="Twitter:" destination="BoV-Xh-Qjf" eventType="touchUpInside" id="Qgv-YR-LIY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrO-I9-Bo7">
+                                <rect key="frame" x="93" y="503" width="135" height="36"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="MORE GAMES">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showOneApp:" destination="BoV-Xh-Qjf" eventType="touchUpInside" id="7XR-gn-DQd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rAe-dJ-LOg" firstAttribute="leading" secondItem="gBK-Tb-aqa" secondAttribute="leadingMargin" constant="-20" id="79g-Sy-Nf9"/>
+                            <constraint firstItem="MrO-I9-Bo7" firstAttribute="top" secondItem="hau-fX-uw2" secondAttribute="bottom" constant="-65" id="Al4-hh-uVy"/>
+                            <constraint firstItem="MrO-I9-Bo7" firstAttribute="centerX" secondItem="hau-fX-uw2" secondAttribute="centerX" id="B7n-gd-N26"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hau-fX-uw2" secondAttribute="trailing" constant="-20" id="BVQ-E0-4QH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="96Z-Rp-tlF" secondAttribute="trailing" constant="8" id="DHF-mq-9c1"/>
+                            <constraint firstItem="96Z-Rp-tlF" firstAttribute="leading" secondItem="gBK-Tb-aqa" secondAttribute="leadingMargin" constant="8" id="FqM-h8-WFh"/>
+                            <constraint firstItem="hau-fX-uw2" firstAttribute="leading" secondItem="gBK-Tb-aqa" secondAttribute="leadingMargin" constant="-20" id="JB6-Ff-UmR"/>
+                            <constraint firstItem="u7V-T4-uE6" firstAttribute="top" secondItem="hau-fX-uw2" secondAttribute="bottom" id="Lf4-ig-amr"/>
+                            <constraint firstItem="SzR-IK-hqU" firstAttribute="leading" secondItem="gBK-Tb-aqa" secondAttribute="leadingMargin" constant="-12" id="Np0-fY-DzG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rAe-dJ-LOg" secondAttribute="trailing" constant="-20" id="Pzt-gz-wlI"/>
+                            <constraint firstItem="hau-fX-uw2" firstAttribute="top" secondItem="rAe-dJ-LOg" secondAttribute="bottom" id="T7B-oU-g8u"/>
+                            <constraint firstItem="u7V-T4-uE6" firstAttribute="top" secondItem="SzR-IK-hqU" secondAttribute="bottom" constant="4" id="gE9-S1-Yyd"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Rn9-8r-ETg" secondAttribute="bottom" id="mVW-YJ-6gs"/>
+                            <constraint firstItem="rAe-dJ-LOg" firstAttribute="top" secondItem="gBK-Tb-aqa" secondAttribute="topMargin" id="nOP-BX-kHi"/>
+                            <constraint firstItem="96Z-Rp-tlF" firstAttribute="top" secondItem="rAe-dJ-LOg" secondAttribute="bottom" constant="44" id="oiD-lj-mtz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Rn9-8r-ETg" secondAttribute="trailing" constant="-15" id="uik-o2-W9n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Score" destination="96Z-Rp-tlF" id="fVY-8D-HZG"/>
+                        <outlet property="outBuy" destination="hau-fX-uw2" id="mfW-Dw-7y8"/>
+                        <outlet property="outRestart" destination="rAe-dJ-LOg" id="VkG-qY-5tY"/>
+                        <segue destination="9fH-Py-c8r" kind="unwind" identifier="Back" unwindAction="goBack:" id="dUW-eq-hVn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hCK-4x-PHF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="9fH-Py-c8r" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="371"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Button-info-icon" width="128" height="128"/>
+        <image name="Fb" width="960" height="960"/>
+        <image name="GCbutton" width="512" height="512"/>
+        <image name="Infobulle" width="500" height="500"/>
+        <image name="Twitter" width="512" height="512"/>
+    </resources>
 </document>
