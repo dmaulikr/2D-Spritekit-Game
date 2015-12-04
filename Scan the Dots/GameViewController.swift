@@ -340,9 +340,12 @@ class GameViewController: UIViewController, ADBannerViewDelegate, SKProductsRequ
         leaderBoardRequest.identifier = "ScanTheDotsLeaderboard"
         leaderBoardRequest.loadScoresWithCompletionHandler { (scores, error) -> Void in
             if (error != nil) {
+                //print(error)
             } else if (scores != nil) {
                 let localPlayerScore = leaderBoardRequest.localPlayerScore
-                self.LBscore = Int(localPlayerScore!.value)
+                if localPlayerScore != nil {
+                    self.LBscore = Int(localPlayerScore!.value)
+                }
             }
         }
     }
@@ -353,6 +356,7 @@ class GameViewController: UIViewController, ADBannerViewDelegate, SKProductsRequ
         GKAchievement.loadAchievementsWithCompletionHandler({(allAchievements,error) -> Void in
             
             if error != nil {
+                //print(error)
             }
             else {
                 if allAchievements != nil{
@@ -398,6 +402,7 @@ class GameViewController: UIViewController, ADBannerViewDelegate, SKProductsRequ
         GKAchievement.reportAchievements(achievementArray, withCompletionHandler: {
             error -> Void in
             if error != nil {
+                //print(error)
             }
             else {
                 self.GameCenterAchievements.removeAll()
@@ -410,7 +415,7 @@ class GameViewController: UIViewController, ADBannerViewDelegate, SKProductsRequ
         GKAchievement.resetAchievementsWithCompletionHandler {
             (error) -> Void in
             if error != nil {
-                print(error)
+                //print(error)
             }
             else {
                 self.GameCenterAchievements.removeAll()

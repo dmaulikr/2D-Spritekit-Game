@@ -372,11 +372,11 @@ class GameScene: SKScene {
             playSound(soundPoint)
             Dot.removeFromParent()
             currentScore++
-            if theSpeed < 500{
+            if theSpeed < 550{
                 self.theSpeed += 2
             }
-            else if theSpeed > 499{
-                self.theSpeed = 500
+            else if theSpeed > 549{
+                self.theSpeed = 5500
             }
             
             addDot()
