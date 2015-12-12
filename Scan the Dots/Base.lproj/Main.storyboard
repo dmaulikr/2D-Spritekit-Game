@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BV1-FR-VrT">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -81,22 +80,22 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Djj-DA-7Ic" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-16" id="1QO-Ig-SPV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CzQ-l8-zWR" secondAttribute="trailing" id="8cQ-0n-XEh"/>
+                            <constraint firstAttribute="trailing" secondItem="VAn-D5-7sv" secondAttribute="trailing" id="DEg-TN-IYz"/>
                             <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="VAn-D5-7sv" secondAttribute="bottom" id="DJN-Vk-PTO"/>
                             <constraint firstItem="L6E-bb-Fyy" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="100" id="M2w-x9-cZg"/>
                             <constraint firstItem="VAn-D5-7sv" firstAttribute="top" secondItem="CzQ-l8-zWR" secondAttribute="bottom" constant="1" id="Pv3-DK-kDz"/>
                             <constraint firstItem="qHh-Mt-9TT" firstAttribute="top" secondItem="Djj-DA-7Ic" secondAttribute="bottom" id="Qgz-2T-y1W"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Hj3-bc-cUb" secondAttribute="leading" id="RqQ-x7-cht"/>
-                            <constraint firstItem="VAn-D5-7sv" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-16" id="SYX-Es-hDs"/>
                             <constraint firstItem="dfG-gI-hvs" firstAttribute="trailing" secondItem="3se-qz-xqx" secondAttribute="trailingMargin" constant="10" id="Yrl-cq-nY8"/>
+                            <constraint firstAttribute="trailing" secondItem="Djj-DA-7Ic" secondAttribute="trailing" id="dIF-1x-M16"/>
                             <constraint firstItem="NQA-km-Shf" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="23" id="iDE-eU-Mqn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="VAn-D5-7sv" secondAttribute="trailing" constant="-16" id="iNR-eJ-oWs"/>
                             <constraint firstItem="VAn-D5-7sv" firstAttribute="top" secondItem="Hj3-bc-cUb" secondAttribute="bottom" constant="1" id="iUb-WY-E3i"/>
+                            <constraint firstItem="Djj-DA-7Ic" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="jh8-g9-n2y"/>
                             <constraint firstItem="L6E-bb-Fyy" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leadingMargin" constant="-12" id="nVE-Ip-c9n"/>
+                            <constraint firstItem="VAn-D5-7sv" firstAttribute="leading" secondItem="3se-qz-xqx" secondAttribute="leading" id="nz0-mj-eEu"/>
                             <constraint firstItem="NQA-km-Shf" firstAttribute="leading" secondItem="L6E-bb-Fyy" secondAttribute="trailing" constant="5" id="oSp-xL-eLG"/>
                             <constraint firstItem="dfG-gI-hvs" firstAttribute="top" secondItem="8aa-yV-Osq" secondAttribute="bottom" constant="18" id="q9D-5n-Pju"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Djj-DA-7Ic" secondAttribute="trailing" constant="-16" id="qnr-8n-Ugd"/>
                         </constraints>
                     </view>
                     <connections>
