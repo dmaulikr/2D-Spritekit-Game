@@ -18,6 +18,7 @@
 		5E1CEE251BE52D1E00D8A9F6 /* Scan_the_DotsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1CEE241BE52D1E00D8A9F6 /* Scan_the_DotsUITests.swift */; };
 		5E1CEE331BE54C2E00D8A9F6 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1CEE321BE54C2E00D8A9F6 /* CGFloatExtension.swift */; };
 		5E1CEE351BE57C3B00D8A9F6 /* ColorChanger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1CEE341BE57C3B00D8A9F6 /* ColorChanger.swift */; };
+		5E5184C01C342EB5007C0798 /* sfx_point.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5E5184BF1C342EB5007C0798 /* sfx_point.mp3 */; };
 		5E9466BC1BF771A5001FD0B9 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9466BB1BF771A5001FD0B9 /* AdSupport.framework */; };
 		5E9466BE1BF771AC001FD0B9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9466BD1BF771AC001FD0B9 /* AudioToolbox.framework */; };
 		5E9466C01BF771BE001FD0B9 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9466BF1BF771BE001FD0B9 /* AVFoundation.framework */; };
@@ -30,7 +31,6 @@
 		5E9466CE1BF7722F001FD0B9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9466CD1BF7722F001FD0B9 /* StoreKit.framework */; };
 		5E9466D01BF7723B001FD0B9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9466CF1BF7723B001FD0B9 /* SystemConfiguration.framework */; };
 		5E9466D81BF77E5C001FD0B9 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9466D71BF77E5C001FD0B9 /* GoogleMobileAds.framework */; };
-		5EA146331BE6C3D9000D38C2 /* sfx_point.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5EA146321BE6C3D9000D38C2 /* sfx_point.mp3 */; };
 		5EA146351BE6C6B5000D38C2 /* sfx_die.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5EA146341BE6C6B5000D38C2 /* sfx_die.mp3 */; };
 		5EA146371BE6CE9D000D38C2 /* GROBOLD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5EA146361BE6CE9D000D38C2 /* GROBOLD.ttf */; };
 		5EE13CEC1BE7EF05005B42A8 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE13CEB1BE7EF05005B42A8 /* iAd.framework */; };
@@ -75,6 +75,7 @@
 		5E1CEE261BE52D1E00D8A9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E1CEE321BE54C2E00D8A9F6 /* CGFloatExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
 		5E1CEE341BE57C3B00D8A9F6 /* ColorChanger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorChanger.swift; sourceTree = "<group>"; };
+		5E5184BF1C342EB5007C0798 /* sfx_point.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sfx_point.mp3; sourceTree = "<group>"; };
 		5E9466BB1BF771A5001FD0B9 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		5E9466BD1BF771AC001FD0B9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5E9466BF1BF771BE001FD0B9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -87,7 +88,6 @@
 		5E9466CD1BF7722F001FD0B9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		5E9466CF1BF7723B001FD0B9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5E9466D71BF77E5C001FD0B9 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		5EA146321BE6C3D9000D38C2 /* sfx_point.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sfx_point.mp3; sourceTree = "<group>"; };
 		5EA146341BE6C6B5000D38C2 /* sfx_die.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sfx_die.mp3; sourceTree = "<group>"; };
 		5EA146361BE6CE9D000D38C2 /* GROBOLD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GROBOLD.ttf; sourceTree = "<group>"; };
 		5EE13CEB1BE7EF05005B42A8 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
@@ -186,7 +186,7 @@
 				5E1CEE321BE54C2E00D8A9F6 /* CGFloatExtension.swift */,
 				5E1CEE341BE57C3B00D8A9F6 /* ColorChanger.swift */,
 				5E1CEE081BE52D1D00D8A9F6 /* Main.storyboard */,
-				5EA146321BE6C3D9000D38C2 /* sfx_point.mp3 */,
+				5E5184BF1C342EB5007C0798 /* sfx_point.mp3 */,
 				5EA146341BE6C6B5000D38C2 /* sfx_die.mp3 */,
 				5EA146361BE6CE9D000D38C2 /* GROBOLD.ttf */,
 				5E1CEE0B1BE52D1D00D8A9F6 /* Assets.xcassets */,
@@ -323,9 +323,9 @@
 				5E1CEE031BE52D1D00D8A9F6 /* GameScene.sks in Resources */,
 				5E1CEE0F1BE52D1D00D8A9F6 /* LaunchScreen.storyboard in Resources */,
 				5E1CEE0C1BE52D1D00D8A9F6 /* Assets.xcassets in Resources */,
-				5EA146331BE6C3D9000D38C2 /* sfx_point.mp3 in Resources */,
 				5E1CEE0A1BE52D1D00D8A9F6 /* Main.storyboard in Resources */,
 				5EA146351BE6C6B5000D38C2 /* sfx_die.mp3 in Resources */,
+				5E5184C01C342EB5007C0798 /* sfx_point.mp3 in Resources */,
 				5EA146371BE6CE9D000D38C2 /* GROBOLD.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,7 +514,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vonleheneck.Scan-the-Dots";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "afb19873-0f13-444a-b66f-7888cdecf889";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/TLL/Desktop/iOS Learn/My Apps/Scan the Dots/Scan the Dots/Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -533,7 +533,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vonleheneck.Scan-the-Dots";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "afb19873-0f13-444a-b66f-7888cdecf889";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/TLL/Desktop/iOS Learn/My Apps/Scan the Dots/Scan the Dots/Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
